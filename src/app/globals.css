@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb));
+}
+
+/* TODO: merge these URLs together at some point */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Oswald:wght@500&family=Signika:wght@500&family=Source+Code+Pro&family=Ubuntu:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+/* From Public Directory */
+@font-face {
+    font-family: 'Kurale';
+    src: url('/fonts/Kurale.ttf');
+    font-style: medium;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@layer utilities {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
+
+@layer base {
+    /* scrollbar css */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #252525;
+        border-radius: 20px;
+    }
+
+    :-webkit-scrollbar-thumb:hover {
+        background-color: #454545 !important;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    a,
+    p,
+    h1 {
+        color: rgb(var(--foreground-rgb));
+    }
+
+    .title-main {
+        font-family: var(--font-poppins);
+    }
+
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+
+    h1.source-code {
+        /* font-family: 'Open Sans', sans-serif;
+        font-family: 'Oswald', sans-serif;
+        font-family: 'Signika', sans-serif; */
+        /* font-family: 'Source Code Pro', monospace; */
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+  @layer components {
+    .text-mainTitle {
+      @apply whitespace-nowrap text-center  leading-none text-white [fontSize:clamp(1.7rem,7vw,6rem)];
+    }
+  
+    .text-title {
+      @apply  leading-8 [fontSize:clamp(1.7rem,5.5vw,4.8rem)] sm:leading-tight lg:leading-none;
+    }
+  
+    .text-body {
+      @apply   [fontSize:clamp(1rem,3vw,1.5rem)];
+    }
+  
+    .contain {
+      @apply px-10 md:px-20 lg:px-32;
+    }
+  
+    .testimony {
+      @apply flex flex-col gap-40 md:gap-52 lg:gap-60 xl:gap-[40rem] xl:border-x-[1px] xl:border-x-gray-500 xl:py-60 xl:px-12;
+    }
+  }
+  
