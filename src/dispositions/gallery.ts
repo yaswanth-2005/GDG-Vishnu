@@ -31,16 +31,24 @@ export const HomeAlbum: GalleryPiece[] = [
 ]
 
 export const HackathonAlbum: GalleryPiece[] = [
+    // {
+    //     remark: 'Unleash the meme',
+    //     imgSrc: '/meme.jpeg',
+    // },
+    // {
+    //     remark: '🪁 Be a Part of This Exciting Event !  ',
+    //     imgSrc: '/event.jpeg',
+    // },
+    // {
+    //     remark: 'Capture and Win ',
+    //     imgSrc: '/capture.jpeg',
+    // },
     {
-        remark: 'Unleash the meme',
-        imgSrc: '/meme.jpeg',
+        remark: 'Come and Witness the Hack-A-Tron',
+        imgSrc: '/events/hack-a-tron-poster.jpg',
     },
     {
-        remark: '🪁 Be a Part of This Exciting Event !  ',
-        imgSrc: '/event.jpeg',
-    },
-    {
-        remark: 'Capture and Win ',
-        imgSrc: '/capture.jpeg',
+        remark: 'Kode Kurukshetra(KKK) Experience the Battle of Code!!',
+        imgSrc: '/events/kode-kurukshetra-poster.jpg',
     },
 ]

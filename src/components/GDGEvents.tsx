@@ -46,26 +46,27 @@ const events = [
         title: 'Kode Kurukshetra',
         shortTitle: 'KKK',
         date: 'March 20th & 21st-2025',
-        description: '',
+        description:
+            'Kode Kurukshetra, hosted by Google Developer Groups at Vishnu Institute of Technology, is the ultimate battle of code, innovation, and glory! Compete for a massive ₹50,000 prize pool and showcase your coding skills on March 20-21. Register now and be part of this epic coding showdown!',
         image: '/events/kode-kurukshetra-poster.jpg',
-        categories: [
-            {
-                name: 'Lens Wizard',
-                icon: <Camera className='w-6 h-6' />,
-                description: 'For outstanding photography',
-            },
-            {
-                name: 'Frame Maestro',
-                icon: <Film className='w-6 h-6' />,
-                description: 'For exceptional videography',
-            },
-            {
-                name: 'Edit Virtuoso',
-                icon: <Scissors className='w-6 h-6' />,
-                description: 'For stellar reel editing',
-            },
-        ],
-        announcementDate: 'December 10th',
+        // categories: [
+        //     {
+        //         name: 'Lens Wizard',
+        //         icon: <Camera className='w-6 h-6' />,
+        //         description: 'For outstanding photography',
+        //     },
+        //     {
+        //         name: 'Frame Maestro',
+        //         icon: <Film className='w-6 h-6' />,
+        //         description: 'For exceptional videography',
+        //     },
+        //     {
+        //         name: 'Edit Virtuoso',
+        //         icon: <Scissors className='w-6 h-6' />,
+        //         description: 'For stellar reel editing',
+        //     },
+        // ],
+        // announcementDate: 'December 10th',
         instagramLink: 'https://www.instagram.com/gdg_vitb/',
         linkedinLink:
             'https://www.linkedin.com/company/gdg-vitb/posts/?feedView=all',
@@ -92,7 +93,7 @@ const events = [
 ]
 
 export default function GDGEventsShowcase() {
-    const [activeTab, setActiveTab] = useState('genesis')
+    const [activeTab, setActiveTab] = useState('Hack-a-Tron')
     const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
@@ -197,7 +198,7 @@ export default function GDGEventsShowcase() {
                                             </ul>
                                         </>
                                     )} */}
-                                    {event.categories && (
+                                    {/* {event.categories && (
                                         <>
                                             <h3 className='text-xl font-semibold mb-2 text-purple-400'>
                                                 Categories:
@@ -224,7 +225,7 @@ export default function GDGEventsShowcase() {
                                                 )}
                                             </ul>
                                         </>
-                                    )}
+                                    )} */}
                                     {/* {event.steps && (
                                         <>
                                             <h3 className='text-xl font-semibold mb-2 text-purple-400'>
@@ -241,13 +242,13 @@ export default function GDGEventsShowcase() {
                                             </ol>
                                         </>
                                     )} */}
-                                    {event.announcementDate && (
+                                    {/* {event.announcementDate && (
                                         <p className='mb-4'>
                                             <Award className='inline-block w-4 h-4 mr-2 text-purple-400' />
                                             Winners will be announced on{' '}
                                             {event.announcementDate}
                                         </p>
-                                    )}
+                                    )} */}
                                 </div>
                             </CardContent>
                             <CardFooter className='flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0'>
