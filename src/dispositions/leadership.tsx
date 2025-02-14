@@ -8,6 +8,7 @@ import { AiOutlineGlobal } from 'react-icons/ai'
 import { MdOutlineBrush, MdOutlineEmojiEvents } from 'react-icons/md'
 import { PiFeatherDuotone, PiHandshakeBold } from 'react-icons/pi'
 import { FiCalendar, FiShare2, FiTrendingUp } from 'react-icons/fi'
+import { Video } from 'lucide-react'
 
 export const FALLBACK_QUOTE = (
     <p>
@@ -178,7 +179,14 @@ export const leadership = {
             linkedin: 'https://linkedin.com',
             icon: <FiShare2 />,
         },
-
+        'Sai Ritwik Vulli': {
+            role: 'Videography Lead',
+            imgSrc: '/TEAM_GDG/ritwik.jpg',
+            quote: <p>Capturing Moments, Creating Memories</p>,
+            github: 'https://github.com',
+            linkedin: 'https://linkedin.com',
+            icon: <Video />,
+        },
         'Surya Teja': {
             role: 'Event Lead',
             imgSrc: '/TEAM_GDG/lakshmi.jpg',
