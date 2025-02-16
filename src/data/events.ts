@@ -96,5 +96,7 @@ Participants worked through structured learning pathways, gaining practical expe
 💡 With enthusiastic participation and successful completion of the program, students earned recognition and official swags from Google as a token of appreciation for their dedication.
 
 Stay connected for more such learning experiences and tech-driven opportunities! 🎉`,
+        date: 'January 29th, 2025',
+        location: 'C-Block, Vishnu Institute of technology',
     },
 ]
