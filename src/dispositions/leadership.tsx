@@ -20,7 +20,7 @@ export const leadership = {
     major: {
         'Mrs M.Sri Lakshmi': {
             role: 'Vice Principal & Faculty Advisor',
-            imgSrc: '/TEAM_GDG/srilakshmimam.jpg',
+            imgSrc: '/TEAM_GDG/srilakshmimam.jpeg',
             quote: <p>I lead with vision and drive progress.</p>,
             github: 'https://github.com',
             linkedin: 'https://linkedin.com',
