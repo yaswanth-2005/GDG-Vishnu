@@ -52,3 +52,10 @@ export const HackathonAlbum: GalleryPiece[] = [
         imgSrc: '/events/kode-kurukshetra-poster.jpg',
     },
 ]
+
+export const hackATronAlbum: GalleryPiece[] = [
+    {
+        remark: 'Come and Witness the Hack-A-Tron',
+        imgSrc: '/events/hack-a-tron-poster.jpg',
+    },
+]

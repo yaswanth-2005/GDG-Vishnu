@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
 import {
     Card,
     CardContent,
@@ -20,6 +21,7 @@ import {
     Instagram,
     Linkedin,
     MessageCircle,
+    ListCollapse,
 } from 'lucide-react'
 
 const events = [
@@ -35,11 +37,14 @@ const events = [
         specialGuest: 'To be revealed Soon!',
         highlights: ['Fun Activities', 'Networking', 'Step to KKK'],
         // contests: ['Best Memer', 'Best Photographer', 'Best Reel Editor'],
+        redirectUrl:
+            'https://unstop.com/p/hack-a-tron-duplicate-gdg-vitb-1381829',
         instagramLink: 'https://www.instagram.com/gdg_vitb/',
         linkedinLink:
             'https://www.linkedin.com/company/gdg-vitb/posts/?feedView=all',
 
         whatsappLink: 'https://chat.whatsapp.com/J5NFiaEkQgKC3iuBSEmW2H',
+        viewmore: true,
     },
     {
         id: 'Kode-Kurukshetra',
@@ -49,6 +54,8 @@ const events = [
         description:
             'Kode Kurukshetra, hosted by Google Developer Groups at Vishnu Institute of Technology, is the ultimate battle of code, innovation, and glory! Compete for a massive ₹50,000 prize pool and showcase your coding skills on March 20-21. Register now and be part of this epic coding showdown!',
         image: '/events/kode-kurukshetra-poster.jpg',
+        specialGuest: 'To be revealed Soon!',
+        highlights: ['Fun Activities', 'Networking'],
         // categories: [
         //     {
         //         name: 'Lens Wizard',
@@ -71,6 +78,7 @@ const events = [
         linkedinLink:
             'https://www.linkedin.com/company/gdg-vitb/posts/?feedView=all',
         whatsappLink: 'https://chat.whatsapp.com/BmEJajfVLsY3OV0B1YLnU9',
+        viewmore: false,
     },
     // {
     //     id: 'meme-contest',
@@ -95,7 +103,7 @@ const events = [
 export default function GDGEventsShowcase() {
     const [activeTab, setActiveTab] = useState('Hack-a-Tron')
     const [isMobile, setIsMobile] = useState(false)
-
+    const router = useRouter()
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768)
         checkMobile()
@@ -166,6 +174,18 @@ export default function GDGEventsShowcase() {
                                             {event.specialGuest}
                                         </p>
                                     )}
+                                    {/* {event.redirectUrl && (
+                                        <>
+                                            <Button
+                                                //@ts-ignore
+                                                onClick={router.push(
+                                                    '/https://unstop.com/p/hack-a-tron-duplicate-gdg-vitb-1381829'
+                                                )}
+                                            >
+                                                Register now
+                                            </Button>
+                                        </>
+                                    )} */}
                                     {event.highlights && (
                                         <>
                                             <h3 className='text-xl font-semibold mb-2 text-purple-400'>
@@ -282,6 +302,25 @@ export default function GDGEventsShowcase() {
                                         </a>
                                     </Button>
                                 </div>
+                                {event.viewmore === true ? (
+                                    <>
+                                        <Button
+                                            className='bg-green-600 hover:bg-green-700'
+                                            asChild
+                                        >
+                                            <a
+                                                href='/hack-a-tron/'
+                                                // target='_blank'
+                                                // rel='noopener noreferrer'
+                                            >
+                                                <ListCollapse className='w-4 h-4 mr-2' />
+                                                View Details
+                                            </a>
+                                        </Button>
+                                    </>
+                                ) : (
+                                    ''
+                                )}
                                 <Button
                                     className='bg-green-600 hover:bg-green-700'
                                     asChild

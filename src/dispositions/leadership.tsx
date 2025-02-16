@@ -18,6 +18,14 @@ export const FALLBACK_QUOTE = (
 
 export const leadership = {
     major: {
+        'Mrs M.Sri Lakshmi': {
+            role: 'Vice Principal & Faculty Advisor',
+            imgSrc: '/TEAM_GDG/srilakshmimam.jpg',
+            quote: <p>I lead with vision and drive progress.</p>,
+            github: 'https://github.com',
+            linkedin: 'https://linkedin.com',
+            icon: <BiCrown />,
+        },
         'Sriram Gajula': {
             role: 'Organizer',
             imgSrc: '/TEAM_GDG/sriram.jpg',
@@ -182,6 +190,14 @@ export const leadership = {
         'Sai Ritwik Vulli': {
             role: 'Videography Lead',
             imgSrc: '/TEAM_GDG/ritwik.jpg',
+            quote: <p>Capturing Moments, Creating Memories</p>,
+            github: 'https://github.com',
+            linkedin: 'https://linkedin.com',
+            icon: <Video />,
+        },
+        'Koti Praveen Tamma': {
+            role: 'Videography Co-Lead',
+            imgSrc: '/TEAM_GDG/koti.jpg',
             quote: <p>Capturing Moments, Creating Memories</p>,
             github: 'https://github.com',
             linkedin: 'https://linkedin.com',

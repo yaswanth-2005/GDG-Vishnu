@@ -282,7 +282,7 @@ export default function Leadership(): React.ReactNode {
             <div className='flex flex-col justify-center items-center w-full h-full py-[44px] px-[10px] sm:px-[7.5vw] lg:px-[14.2vw] gap-4 overflow-x-hidden'>
                 <div>
                     <h1 className='title-main w-full text-center text-3xl font-semibold leading-14 drop-shadow-[0_0_14px_rgba(255,255,255,0.5)]'>
-                        Our Google Developer Groupss
+                        Our Google Developer Groups
                     </h1>
                     <h1 className='title-main w-full text-center mt-5 text-lg font-semibold text-[#FCD690] drop-shadow-[0_0_20px_rgba(255,205,60,0.9)]'>
                         👑 2024 - 2025 👑
@@ -294,6 +294,11 @@ export default function Leadership(): React.ReactNode {
 
                 {/* Major Leadership Role Cards */}
                 <div className='flex flex-row flex-wrap justify-center align-middle gap-x-4 sm:gap-x-7 gap-y-[18px] group/majorcards'>
+                    {/* <MajorLeaderCard
+                        index={0}
+                        key={leadership.major[0]}
+                        leaderName={leadership.major[0].majorLeaderName}
+                    /> */}
                     {Object.keys(leadership.major).map(
                         (majorLeaderName, index) => (
                             <MajorLeaderCard
